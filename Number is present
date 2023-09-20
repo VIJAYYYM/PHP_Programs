@@ -1,0 +1,13 @@
+<?php
+function isNumberInArray($array, $number) {
+    return in_array($number, $array);
+}
+
+$numbers = [1, 2, 3, 4, 5];
+$numberToCheck = 3;
+if (isNumberInArray($numbers, $numberToCheck)) {
+    echo "The number $numberToCheck is present in the array";
+} else {
+    echo "The number $numberToCheck is not present in the array";
+}
+?>
