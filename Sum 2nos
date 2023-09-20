@@ -1,0 +1,12 @@
+<?php
+function computeSum($num1, $num2) {
+    if ($num1 === $num2) {
+        return 3 * ($num1 + $num2);
+    } else {
+        return $num1 + $num2;
+    }
+}
+
+$result = computeSum(5, 5);
+echo "The result is: " . $result;
+?>
