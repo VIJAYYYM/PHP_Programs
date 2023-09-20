@@ -1,0 +1,14 @@
+<?php
+function checkRange($num1, $num2, $num3) {
+    return ($num1 >= 20 && $num1 <= 50) || 
+           ($num2 >= 20 && $num2 <= 50) || 
+           ($num3 >= 20 && $num3 <= 50);
+}
+
+$result = checkRange(15, 25, 30);
+if ($result) {
+    echo "One or more numbers are in the range 20..50";
+} else {
+    echo "None of the numbers are in the range 20..50";
+}
+?>
