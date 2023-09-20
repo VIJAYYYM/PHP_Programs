@@ -1,0 +1,15 @@
+<?php
+$units = 250;
+
+if ($units <= 50) {
+    $bill = $units * 2.50;
+} elseif ($units <= 150) {
+    $bill = 50 * 2.50 + ($units - 50) * 3.00;
+} elseif ($units <= 250) {
+    $bill = 50 * 2.50 + 100 * 3.00 + ($units - 150) * 4.00;
+} else {
+    $bill = 50 * 2.50 + 100 * 3.00 + 100 * 4.00 + ($units - 250) * 5.00;
+}
+
+echo "Electricity Bill for $units units: $" . number_format($bill, 2);
+?>
