@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Details</title>
+</head>
+<body>
+    <h1>Registration Details</h1>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $first_name = $_POST["first_name"];
+        $last_name = $_POST["last_name"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        $address = $_POST["address"];
+        $phone_number = $_POST["phone_number"];
+
+        echo "<p><strong>First Name:</strong> $first_name</p>";
+        echo "<p><strong>Last Name:</strong> $last_name</p>";
+        echo "<p><strong>Username:</strong> $username</p>";
+        echo "<p><strong>Password:</strong> $password</p>";
+        echo "<p><strong>Address:</strong> $address</p>";
+        echo "<p><strong>Phone Number:</strong> $phone_number</p>";
+    }
+    ?>
+</body>
+</html>
