@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Details</title>
+</head>
+<body>
+    <h1>Feedback Details</h1>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        $address = $_POST["address"];
+        $email = $_POST["email"];
+        $comments = $_POST["comments"];
+
+        echo "<p><strong>Name:</strong> $name</p>";
+        echo "<p><strong>Address:</strong> $address</p>";
+        echo "<p><strong>Email:</strong> $email</p>";
+        echo "<p><strong>Comments:</strong> $comments</p>";
+    }
+    ?>
+</body>
+</html>
